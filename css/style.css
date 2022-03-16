@@ -1,0 +1,97 @@
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+    background-color: #EEE;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 190px auto;
+}
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+}
+.bigbox {
+    flex-basis: 25%;
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    padding: 40px 0px 85px 60px;
+}
+.bigbox:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.bigbox:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+.bigbox:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.bigbox .box .image img {
+    max-width: 100%;
+}
+.bigbox .box .text {
+    padding: 0px 68px 0 0;
+    margin-bottom: 90px;
+}
+.bigbox .box .text h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: Big Shoulders Display;
+}
+.bigbox .box .text p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+}
+.bigbox .box a {
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 27px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: 0.3s;
+}
+.bigbox:nth-child(1) .box a {
+    color: hsl(31, 77%, 52%);
+}
+.bigbox:nth-child(2) .box a {
+    color: hsl(184, 100%, 22%);
+}
+.bigbox:nth-child(3) .box a {
+    color: hsl(179, 100%, 13%);
+}
+.bigbox .box a:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
